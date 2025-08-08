@@ -3,16 +3,16 @@ import numpy as np
 from transformers import AutoTokenizer, AutoModel
 from datasets import load_dataset
 
-def load_and_index_data(dataset_name="squad_v2", max_samples=100):  # Reduced for Codespaces
+def load_and_index_data(dataset_name="squad_v2", max_samples=50):  # Reduced for Colab
     try:
         print("Loading dataset...")
         dataset = load_dataset(dataset_name, split="train")[:max_samples]
-        passages = dataset["context"]  # Fixed: Direct access to context list
+        passages = dataset["context"]
         print(f"Loaded {len(passages)} passages")
 
         print("Initializing embedding model...")
         tokenizer = AutoTokenizer.from_pretrained("distilbert-base-uncased")
-        model = AutoModel.from_pretrain1ed("distilbert-base-uncased")
+        model = AutoModel.from_pretrained("distilbert-base-uncased")
         
         print("Generating embeddings...")
         embeddings = []
