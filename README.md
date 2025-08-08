@@ -1,25 +1,29 @@
 # RAG Question-Answering System
 
-A Retrieval-Augmented Generation (RAG) system that answers questions by retrieving relevant passages and generating responses using state-of-the-art NLP models. Built with free resources, this project combines semantic search with text generation, ideal for educational and portfolio purposes.
+A Retrieval-Augmented Generation (RAG) system that answers questions like "What is machine learning?" by retrieving relevant passages and generating concise responses using NLP models. Built with free resources, this project showcases semantic search and text generation for my GitHub portfolio.
 
 ## Features
-- **Semantic Retrieval**: Uses `sentence-transformers/all-MiniLM-L6-v2` for accurate passage retrieval via FAISS with HNSW indexing.
-- **Answer Generation**: Employs `t5-small` for lightweight, precise answer generation from retrieved passages.
-- **Curated Dataset**: Enhances SQuAD 2.0 with handcrafted machine learning passages for better accuracy.
-- **Web Interface**: Deployed via Streamlit, with support for Google Colab using `ngrok`.
-- **Portfolio-Ready**: Demonstrates end-to-end Gen AI/LLM skills, building on my experience with [DocGenAI](https://github.com/superuser303/DocGenAI).
+- **Semantic Retrieval**: Uses `sentence-transformers/all-MiniLM-L6-v2` with FAISS HNSW indexing for accurate passage retrieval.
+- **Answer Generation**: Employs `t5-small` for lightweight, precise answers.
+- **Curated Dataset**: Enhances SQuAD 2.0 with handcrafted machine learning passages.
+- **Web Interface**: Runs via Streamlit, with Google Colab support using `ngrok`.
+- **Portfolio-Ready**: Demonstrates Gen AI/LLM skills, building on my [DocGenAI](https://github.com/superuser303/DocGenAI) experience.
 
 ## Demo
-Ask questions like "What is machine learning?" to get accurate, concise answers backed by relevant passages. (Live demo link to be added post-deployment.)
+Enter queries like "What is machine learning?" to get answers like:  
+> Machine learning is a field of AI that enables computers to learn from data without explicit programming.  
+(Live demo link to be added post-deployment to Streamlit Cloud.)
 
-## Setup and Installation
+## How to Run the Project
+Follow these steps to set up and run the project after downloading the repository.
+
 ### Prerequisites
 - Python 3.8–3.12
 - Google Colab (for free-tier usage) or local environment
-- Free ngrok account (for Colab Streamlit hosting)
+- Free ngrok account (for Colab, get authtoken from [ngrok.com](https://dashboard.ngrok.com))
 
 ### Steps
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/superuser303/RAG-Question-Answering.git
-   cd RAG-Question-Answering
+   git clone https://github.com/superuser303/RAG-Based-Question-Answering-System.git
+   cd RAG-Based-Question-Answering-System
